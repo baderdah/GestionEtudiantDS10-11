@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+ 	<servlet>
+ 		<servlet-name>acceuilControler</servlet-name>
+ 		<display-name>acceuilControler</display-name>
+ 		<description></description>
+ 		<servlet-class>servlets.mainControler</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet>
+ 		<servlet-name>ajoutControler</servlet-name>
+ 		<display-name>ajoutControler</display-name>
+ 		<description></description>
+ 		<servlet-class>servlets.ajoutControler</servlet-class>
+ 	</servlet>
+ 	<servlet>
+ 		<servlet-name>affichageControler</servlet-name>
+ 		<display-name>affichageControler</display-name>
+ 		<description></description>
+ 		<servlet-class>servlets.affichageControler</servlet-class>
+ 	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>acceuilControler</servlet-name>
+		<url-pattern>/acceuilControler</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ajoutControler</servlet-name>
+		<url-pattern>/ajouter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>affichageControler</servlet-name>
+		<url-pattern>/afficher</url-pattern>
+	</servlet-mapping>
+</web-app>
